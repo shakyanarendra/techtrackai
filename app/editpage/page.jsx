@@ -88,6 +88,7 @@ const EditPage = () => {
       // Show success toast after successful update
       toast.success("Profile updated successfully!");
       router.push("/dashboard");
+      router.refresh();
     } catch (error) {
       console.error("Onboarding error:", error);
       toast.error("An error occurred while updating your profile.");
